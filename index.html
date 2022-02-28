@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+    <script type="module" src="./menu.js"></script>
+</head>
+<body>    
+    <my-menu class="hamburger_menu"></my-menu>
+    <section class="section_hero">
+        <!--Slider start-->
+        <div class="hero_slider">
+            <div class="slides">
+                <!--radio button start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!--radio button end-->
+                <!--video slide start-->
+                <div class="slide first">
+                    <div class="slide hero_video-desktop" style="padding:56.25% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/677647401?background=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide hero_video-desktop" style="padding:56.25% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/665719898?background=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide hero_video-desktop" style="padding:56.25% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/665719799?background=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                 <!--video slide end-->
+                 <!--automatic navigation start-->
+                 <div class="navigation-auto">
+                     <div class="auto-btn1"></div>
+                     <div class="auto-btn2"></div>
+                     <div class="auto-btn3"></div>
+                 </div>
+                  <!--automatic navigation ends-->
+            </div>
+            <!--manual navigation starts-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+             <!--manual navigation ends-->
+        </div>
+        <!--video slider end-->
+
+
+    </section>
+
+    <script src="https://player.vimeo.com/api/player.js"></script> 
+    <script src="./heroSlider.js"></script> 
+</body>
+</html>
