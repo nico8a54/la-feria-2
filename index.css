@@ -1,3 +1,22 @@
+:root {
+    --AzulClaro: #B0BFFF;
+    --PurpuraClaro: #EAE9FB;
+    --AzulOscuro: #0A0926;
+    --FeriaPpal: #3A37E0;
+    --PaddingVertical: 5.6rem;
+    --PaddingHorizontal: 2.4rem;
+    --FontSizeRoot: 62.5%;
+}
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--FontSizeRoot);
+    color: white;
+}
+
 body {
     position: relative;
     margin: 0;
@@ -6,16 +25,8 @@ body {
 
 .hamburger_menu {
     position: fixed;
-    top: 64px;
+    top: var(--PaddingVertical);
     right: 64px;
+    z-index: 100;
 }
 
-.line1 {
-    position: absolute;
-    top: 40vh;
-    left: 10vw;
-    width: 100px;
-    height: 3px;
-    background-color: aquamarine;
-    z-index: 2;
-}

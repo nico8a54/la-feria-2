@@ -1,3 +1,6 @@
+@import url(./index.css);
+
+
 .section_hero {
     width: 100vw;
     height: 100vh;
@@ -21,37 +24,33 @@
     transition: 2s;
 }
 
-/* css for manual */
+/* Botones */
 .navigation-manual{
     position: absolute;
-    width: 800px;
-    margin-top: -40px;
+    width: auto;
     display: flex;
+    gap: 8px;
+    top: 50vh;
+    left: 50px;
     justify-content: center;
 }
-.manual-btn, .navigation-auto div {
-    /* border: 2px solid blue; */
-    padding: 5px;
-    border-radius: 10px;
+.manual-btn {
+    width: 50px;
+    height: 2px;
+    border-radius: 1px;
     cursor: pointer;
     transition: 1s;
-}
-#manual-btn-1 {
-    background-color: blue;
-}
-.manual-btn-2 {
-    background-color: grey;
-}
-.manual-btn-3 {
-    background-color: grey;
-}
-.manual-btn:not(:last-child), .navigation-auto div:not(:last-child) {
-    margin-right: 40px;
-}
-.manual-btn:hover {
-    background: blue;
+    background-color: var(--PurpuraClaro);
 }
 
+/* .manual-btn:not(:last-child) {
+    margin-right: 40px;
+} */
+.manual-btn:hover {
+    background: var(--FeriaPpal);
+}
+
+/* ESTO ES LO QUE MUEVE EL SLIDER - Cuando el input tipo check se marca el primer slide que tiene la clase first cambia su margin hacia la izquierda */
 #radio1:checked ~ .first{
     margin-left: 0;
 }
@@ -62,15 +61,3 @@
     margin-left: -200vw;
 }
 
-
-
-/* css for automatic */
-/* #radio1:checked ~ .navigation-auto .auto-btn1{
-    margin-left: 0;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    margin-left: -100vw;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    margin-left: -200vw;
-} */
