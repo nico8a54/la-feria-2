@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var video1 = document.getElementById('video1')
 var video2 = document.getElementById('video2')
 var video3 = document.getElementById('video3')
@@ -34,19 +33,3 @@ video3.onended = function () {
     title2.style.display="none";
     title3.style.display="none";
 }
-=======
-const line1 = document.getElementById("line1");
-line1.style.backgroundColor = "red";
-
-const myElement = document.getElementById("demo");
-myElement.style.color = "red";
-
-var counter = 1;
-setInterval(function(){
-    document.getElementById('radio' + counter).checked = true;
-    counter ++;
-    if(counter>3){
-        counter = 1;
-    }
-},6000)
->>>>>>> parent of 8004d24 (v0.1.2)

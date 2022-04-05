@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url(./heroSlider.css);
 
 :root {
@@ -19,8 +18,6 @@ html {
     font-size: var(--FontSizeRoot);
 }
 
-=======
->>>>>>> parent of 8004d24 (v0.1.2)
 body {
     position: relative;
     margin: 0;
@@ -38,7 +35,6 @@ h2 {font-family: 'Roboto', sans-serif;
     right: 64px;
 }
 
-<<<<<<< HEAD
 /* SECTION HERO */
 .slider {
     position: relative;
@@ -103,14 +99,4 @@ h2 {font-family: 'Roboto', sans-serif;
         transform: translate(0px, 0);
 
     }
-=======
-.line1 {
-    position: absolute;
-    top: 40vh;
-    left: 10vw;
-    width: 100px;
-    height: 3px;
-    background-color: aquamarine;
-    z-index: 2;
->>>>>>> parent of 8004d24 (v0.1.2)
 }
