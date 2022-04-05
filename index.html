@@ -6,13 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./menu.css">
     <link rel="stylesheet" href="./index.css">
-    <title>Document</title>
     <script type="module" src="./menu.js"></script>
+    <title>La Feria de Diseno 2</title>
 </head>
 <body>    
     <my-menu class="hamburger_menu"></my-menu>
     <section class="section_hero">
+        <div class="line1" id="line1">
+            <h1 id="demo">The Document Object</h1>
+            <h2>The getElementById() Method</h2>
+        </div>
         <!--Slider start-->
+<<<<<<< HEAD
+        <div class="slider">
+            <div class="heroTitles">
+                <h2 class="title" id="title1">SOMOS <br> MAS QUE <br> INSPIRACION</h2>
+                <h2 class="title" id="title2">EL MEJOR <br> DISEÑO ES <br> LA EXPERIENCIA</h2>
+                <h2 class="title" id="title3">AQUI <br> TODO <br> SE DISEÑA </h2>
+            </div>
+            <video autoplay muted class="mySlides" id="video1">
+                <source src="./assets/Corte1_ 16_9.mp4">
+            </video>
+            <video autoplay muted class="mySlides" id="video2">
+                <source src="./assets/Corte2_ 16_9.mp4">
+            </video>
+            <video autoplay muted class="mySlides" id="video3">
+                <source src="./assets/Corte3_ 16_9.mp4">
+            </video>
+=======
         <div class="hero_slider">
             <div class="slides">
                 <!--radio button start-->
@@ -23,7 +44,7 @@
                 <!--video slide start-->
                 <div class="slide first">
                     <div class="slide hero_video-desktop" style="padding:56.25% 0 0 0;position:relative;">
-                        <iframe src="https://player.vimeo.com/video/683028885?background=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://player.vimeo.com/video/677647401?background=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="slide">
@@ -37,19 +58,31 @@
                     </div>
                 </div>
                  <!--video slide end-->
-                
+                 <!--automatic navigation start-->
+                 <div class="navigation-auto">
+                     <div class="auto-btn1"></div>
+                     <div class="auto-btn2"></div>
+                     <div class="auto-btn3"></div>
+                 </div>
+                  <!--automatic navigation ends-->
             </div>
             <!--manual navigation starts-->
             <div class="navigation-manual">
                 <label for="radio1" class="manual-btn" id= "manual-btn-1"></label>
-                <label for="radio2" class="manual-btn" id= "manual-btn-2"></label>
-                <label for="radio3" class="manual-btn"  id= "manual-btn-3"></label>
+                <label for="radio2" class="manual-btn manual-btn-2"></label>
+                <label for="radio3" class="manual-btn manual-btn-3"></label>
             </div>
              <!--manual navigation ends-->
+>>>>>>> parent of 8004d24 (v0.1.2)
         </div>
+        <!--video slider end-->
+
+
     </section>
 
-    <script src="https://player.vimeo.com/api/player.js"></script> 
+   
+
+ 
     <script src="./heroSlider.js"></script> 
 </body>
 </html>

@@ -1,5 +1,4 @@
 @import url(./heroSlider.css);
-@import url(./index.css);
 
 .ham {
     cursor: pointer;
@@ -21,7 +20,7 @@
   .line {
     fill:none;
     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke: var(--AzulOscuro);
+    stroke:#000;
     stroke-width:5.5;
     stroke-linecap:round;
   }
