@@ -6,7 +6,10 @@
     --AzulOscuro: #0A0926;
     --FeriaPpal: #3A37E0;
     --PaddingVertical: 5.6rem;
-    --PaddingHorizontal: 140rem;
+    --PaddingHorizontalMobile: 24rem;
+    --PaddingHorizontalTablet: 140rem;
+    --PaddingHorizontalDesktop: 140rem;
+    --PaddingHorizontalWide: 140rem;
     --FontSizeRoot: 6.25%;
 }
 * {
@@ -22,15 +25,18 @@ body {
     position: relative;
     margin: 0;
 }
-h2 {font-family: 'Roboto', sans-serif;
+h2 {font-family: neue-haas-unica, sans-serif;
     font-size: 74rem;
-    font-weight: 100;
+    font-weight: 200;
+    line-height: 110%;
+    font-style: normal;
     margin: 0;
     color: white;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
 .hamburger_menu {
     position: fixed;
+    z-index: 10;
     top: 64px;
     right: 64px;
 }
@@ -52,26 +58,17 @@ h2 {font-family: 'Roboto', sans-serif;
 .title {
     display: flex;
     flex-direction: column;
+   
+    
 }
 .title_span-1 {
-    animation-name: aparecer; 
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
+    animation: aparecer 1s 0s cubic-bezier(0.5, 0, 0.1, 1); 
 }
 .title_span-2 {
-    animation-name: aparecer; 
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-delay: 0.25s;
+    animation: aparecer 1s 0s cubic-bezier(0.5, 0, 0.1, 1); 
 }
 .title_span-3 {
-    animation-name: aparecer; 
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-delay: 0.5s;
+    animation: aparecer 1s 0s cubic-bezier(0.5, 0, 0.1, 1); 
 }
 #title2 {
     display: none;
@@ -89,29 +86,35 @@ h2 {font-family: 'Roboto', sans-serif;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       }
 }
+@keyframes width {
+    from {
+        width: 0%;
+      }
+      to {
+        width: 100%;
+      }
+}
 
 
 .mySlides {
     position: absolute;
+    width: 100vw;
     top: 0;
-    animation-name: slide;
+    animation: slide 4s;
+    opacity: 0;
 }
 
 @keyframes slide {
     from {
-        opacity: 0.25;
+        transform: scaleX(0%);
+        transform-origin: 0;
     }
     to {
-        opacity: 1;
+        transform: scaleX(100%);
 
     }
 }
-@keyframes slide2 {
-    from {
-        transform: translate(-100vw, 0);
-    }
-    to {
-        transform: translate(0px, 0);
 
-    }
+video {
+    min-height: 100%;
 }
