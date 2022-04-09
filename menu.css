@@ -1,4 +1,8 @@
 @import url(./heroSlider.css);
+@import url(./index.css);
+
+
+/* HAMBURGER MENU */
 
 .ham {
     cursor: pointer;
@@ -39,4 +43,13 @@
     stroke-dashoffset: -138px;
   }
  
+/* MENU */
+
+.menu {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--FeriaPpal);
+  z-index: 5;
+}
   

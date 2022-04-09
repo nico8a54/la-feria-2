@@ -7,7 +7,6 @@ var title3 = document.getElementById('title3')
 var slideCounter = document.getElementById("slideCounter")
 
 video1.play();
-video1.style.opacity=1;
 
 video1.onended = function () {
     video2.play();
@@ -25,6 +24,7 @@ video2.onended = function () {
     video1.style.opacity=0;
     video2.style.opacity=0;
     video3.style.opacity=1;
+    slideCounter.innerHTML = "03/03"
     title1.style.display="none";
     title2.style.display="none";
     title3.style.display="flex";
@@ -35,6 +35,7 @@ video3.onended = function () {
     video1.style.opacity=1;
     video2.style.opacity=0;
     video3.style.opacity=0;
+    slideCounter.innerHTML = "01/03"
     title1.style.display="flex";
     title2.style.display="none";
     title3.style.display="none";
