@@ -1,4 +1,3 @@
-@import url(./css/heroSlider.css);
 
 :root {
     --AzulClaro: #B0BFFF;
@@ -118,13 +117,12 @@ h2 {
         }
         
     }
-   .video_container {
+   .videos {
         position: absolute;
-        max-width: 100vw;
         max-height: 100vh;
-        top: 0;
         overflow: hidden;
     }
+    
 
    
     
