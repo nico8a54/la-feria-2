@@ -18,12 +18,27 @@ h2 {
     }
 
 .menuLinks_container {
-display: flex;
-justify-content: space-between;
-width: 100%;
-gap: 32rem;
-padding: 24rem;
-}
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    width: 100%;
+    gap: 24rem;
+    padding: 24rem;
+    }
+
+    .menuSiguenos {
+        display: none;
+    }
+
+    .menuImage {
+        display: flex;
+      }
+
+
+.menuLinks_container-links {
+    width: auto;
+    padding: 16rem 0;
+    gap: 24rem;
+  }
 .menuLinks_container-contactos {
     display: flex;
     flex-direction: column;
