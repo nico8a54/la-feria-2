@@ -47,37 +47,16 @@
 
 .menu {
   width: 100%;
-  height: 100%;
+  height: 0;
   position: absolute;
-  top: -100vh;
-  background-color: var(--FeriaPpal);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) -95.91%, #3A37E0 100%);
   z-index: 5;
-  animation: menuClose 0.5s cubic-bezier(.52,0,.77,.56);
+  transition: all 0.5s cubic-bezier(.52,0,.77,.56);
   display: none;
+  opacity: 0;
 }
 .menu.active {
-  animation: menuOpen 0.5s cubic-bezier(.52,0,.77,.56);
-  top: 0vh;
+  height: 100%;
+  opacity: 1;
 }
 
-@keyframes menuOpen {
-  from {
-    top: -100vh;
-    opacity: 0;
-    display: flex;
-  }
-  to {
-    top: 0vh;
-    opacity: 1;
-  }  
-}
-@keyframes menuClose {
-  from {
-    top: 0vh;
-    opacity: 1;
-  }
-  to {
-    top: -100vh;
-    opacity: 0;
-  }  
-}
