@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://use.typekit.net/ojq4hve.css">
     <script type="module" src="./js/menu.js"></script>
+    <script type="module" src="./js/dropMenu.js"></script>
 
     <link rel="stylesheet" media="(min-width:481px)" href="./css/tablet.css">
     <link rel="stylesheet" media="(min-width:769px)" href="./css/desktop.css">
@@ -16,10 +17,59 @@
 </head>
 <body>    
     <my-menu class="hamburger_menu" onclick="slideMenu()"></my-menu>
+    <my-drop-menu class="menu dfc" id="menu">  
+        
+    </my-drop-menu>
 
-    <section class="menu dfc" id="menu">
-
+    <section class="menuTemp dfc">
+        <img class="logo"src="./assets/Logo.svg" alt="">  
+        <div class="menuLinks_container">
+            <div class="menuLinks_container-links dfc">
+                <a href="">Inicio</a>
+                <a href="">Nosotros</a>
+                <a href="">Preguntas</a>
+                <a href="">Participantes</a>
+            </div>
+            <div class="menuLinks_container-line"></div>
+            
+            <div class="menuLinks_container-contactos">
+                <h2>CONTACTO</h2>
+                <div>
+                    <span>Espacios y participacion</span>
+                    <a href="">juana.montoya@laferiadediseno.com</a>
+                    <a href="">+57 313 637 3318</a>
+                </div>
+                <div>
+                    <span>Producción General</span>
+                    <a href="">produccion@laferiadediseno.com</a>
+                </div>
+                <div class="menuSiguenos">
+                    <span>Siguenos</span>
+                    <div>
+                        <a href="">
+                            <img class="logoSocial"src="./assets/instagram.svg" alt=""> 
+                        </a>
+                        <a href="">
+                            <img class="logosocial"src="./assets/Linkedin.svg" alt="">  
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="menuSiguenos">
+            <span>Siguenos</span>
+            <div>
+                <a href="">
+                    <img class="logoSocial"src="./assets/instagram.svg" alt=""> 
+                </a>
+                <a href="">
+                    <img class="logosocial"src="./assets/Linkedin.svg" alt="">  
+                </a>
+            </div>
+        </div>
     </section>
+
+   
 
     <section class="section_hero dfc">        
         <div class="hero_container dfc">

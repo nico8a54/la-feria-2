@@ -1,11 +1,14 @@
 @import url(./index.css);
-@import url(./menu.css);
 
 
 h2 {
     font-size: 48rem;
 }
-
+.dfc {
+    display: flex;
+    flex-direction: column;
+}
+/* MENU */
 .hamburger_menu {
     top: 70rem;
     right: 70rem;
@@ -13,6 +16,20 @@ h2 {
     .ham {
         width: 70px;
     }
+
+.menuLinks_container {
+display: flex;
+justify-content: space-between;
+width: 100%;
+gap: 32rem;
+padding: 24rem;
+}
+.menuLinks_container-contactos {
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* SECTION HERO */
 .hero_container {
     padding: var(--PaddingHorizontalTablet);
@@ -26,3 +43,20 @@ h2 {
 .hero_container-bottom {
     padding-bottom: 48rem;
 }
+.video_container {
+    max-height: none;
+    height: 100vh;
+    width: 100%;
+    overflow:visible;
+}
+    .videos {
+        position: absolute;
+        height: 100%;
+        width: auto;
+    }
+
+    #video1 {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
