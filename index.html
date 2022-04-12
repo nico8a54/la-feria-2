@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://use.typekit.net/ojq4hve.css">
     <script type="module" src="./js/menu.js"></script>
+
+    <link rel="stylesheet" media="(min-width:481px)" href="./css/tablet.css">
+    <link rel="stylesheet" media="(min-width:769px)" href="./css/desktop.css">
+
     <title>La Feria de Diseno 2</title>
 </head>
 <body>    
@@ -21,23 +25,29 @@
         <div class="hero_container dfc">
             <img class="logo"src="./assets/Logo.svg" alt="">                
             <div class="heroTitles dfc">
-                <h2 class="title dfc" id="title1">
+                <h2 class="title" id="title1">
                     <span class="title_span-1" id="slideCounter">01/03</span>
-                    <span class="title_span-1">SOMOS</span> 
-                    <span class="title_span-2">MAS QUE</span> 
-                    <span class="title_span-3">INSPIRACION</span>
+                    <div>
+                        <span class="title_span-1">SOMOS</span> 
+                        <span class="title_span-2">MAS QUE</span> 
+                        <span class="title_span-3">INSPIRACION</span>
+                    </div>
                 </h2>
-                <h2 class="title dfc" id="title2">
+                <h2 class="title" id="title2">
                     <span class="title_span-1" id="slideCounter">02/03</span>
-                    <span class="title_span-1">EL MEJOR</span> 
-                    <span class="title_span-2">DISEÑO ES</span> 
-                    <span class="title_span-3">LA EXPERIENCIA</span>
+                    <div>
+                        <span class="title_span-1">EL MEJOR</span> 
+                        <span class="title_span-2">DISEÑO ES</span> 
+                        <span class="title_span-3">LA EXPERIENCIA</span>
+                    </div>
                 </h2>
-                <h2 class="title dfc" id="title3">
+                <h2 class="title" id="title3">
                     <span class="title_span-1" id="slideCounter">03/03</span>
-                    <span class="title_span-1">AQUÍ</span> 
-                    <span class="title_span-2">TODO</span> 
-                    <span class="title_span-3">SE DISEÑA</span>
+                    <div>
+                        <span class="title_span-1">AQUÍ</span> 
+                        <span class="title_span-2">TODO</span> 
+                        <span class="title_span-3">SE DISEÑA</span>
+                    </div>
                 </h2>
             </div>
         </div>
@@ -50,17 +60,17 @@
             </div>
         </div>
 
-        <div class="video_container">
-            <video autoplay muted class="mySlides" id="video1">
+        <div class="video_container">                   
+            <video autoplay muted id="video1" style="height:100vh">
                 <source src="./assets/LFD1_16_9.mp4">
-            </video>
-            <video muted class="mySlides" id="video2">
-                <source src="./assets/LFD2_16_9.mp4">
-            </video>
-              <video muted class="mySlides" id="video3">
-                <source src="./assets/LFD3_16_9.mp4">
-            </video>
+            </video>            
         </div>
+        <video muted class="videos" id="video2">
+            <source src="./assets/LFD2_16_9.mp4">
+        </video>
+          <video muted class="videos" id="video3">
+            <source src="./assets/LFD3_16_9.mp4">
+        </video>
     </section>
 
    

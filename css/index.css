@@ -7,7 +7,7 @@
     --FeriaPpal: #3A37E0;
     --PaddingVertical: 5.6rem;
     --PaddingHorizontalMobile: 24rem;
-    --PaddingHorizontalTablet: 140rem;
+    --PaddingHorizontalTablet: 88rem;
     --PaddingHorizontalDesktop: 140rem;
     --PaddingHorizontalWide: 140rem;
     --FontSizeRoot: 6.25%;
@@ -54,12 +54,14 @@ h2 {
     max-height: 100vh;
     min-height: 100vh;
     background-color: var(--AzulOscuro);
+    overflow: hidden;
 }
 
     .hero_container{
         align-items: flex-start;
         width: 100vw;
-        padding: 24rem;
+        padding: var(--PaddingHorizontalMobile);
+        padding-bottom: 0;
         gap: 208rem;
         z-index: 1;
         
@@ -71,7 +73,14 @@ h2 {
             z-index: 2; 
             gap: 16rem;
         }
-        
+        .title {
+            display: flex;
+            flex-direction: column;
+        }
+        .title > div {
+            display: flex;
+            flex-direction: column;
+        }
         .title_span-1, .title_span-2 , .title_span-3  {
             animation: aparecer 1s cubic-bezier(0.5, 0, 0.1, 1); 
         }
@@ -90,41 +99,48 @@ h2 {
        width: 100%;
        gap: 64rem;
        align-items: center;
-       padding: 24rem;
-       z-index: 1;
-       
+       padding-bottom: var(--PaddingHorizontalMobile);
+       z-index: 1;       
    }
-   .hero_container-bottom div {
-        gap: 8rem;
-   }
-   .hero_container-bottom div span {
-       color: white;
-       font-size: 12rem;
-   }
-   .hero_container-bottom div img {
-       height: 8rem;
-       animation: bounce  1s ease-in-out infinite;
-   }
-    @keyframes bounce {
-        0% {
-            transform: translateY(-2rem);
+        .hero_container-bottom div {
+            gap: 8rem;
         }
-        
-        50% {
-            transform: translateY(2rem);
+        .hero_container-bottom div span {
+            color: white;
+            font-size: 12rem;
         }
-        100% {
-            transform: translateY(-2rem);
+        .hero_container-bottom div img {
+            height: 8rem;
+            animation: bounce  1s ease-in-out infinite;
         }
-        
-    }
+            @keyframes bounce {
+                0% {
+                    transform: translateY(-2rem);
+                }
+                
+                50% {
+                    transform: translateY(2rem);
+                }
+                100% {
+                    transform: translateY(-2rem);
+                }                
+            }
    .video_container {
         position: absolute;
         max-width: 100vw;
         max-height: 100vh;
+        height: 100vh;
         top: 0;
         overflow: hidden;
     }
+        .videos {
+            position: absolute;
+            height: 100vh;
+        }
+        #video1 {
+            height: 100%;
+        }
+
 
    
     

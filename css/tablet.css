@@ -1,0 +1,28 @@
+@import url(./index.css);
+@import url(./menu.css);
+
+
+h2 {
+    font-size: 48rem;
+}
+
+.hamburger_menu {
+    top: 70rem;
+    right: 70rem;
+}
+    .ham {
+        width: 70px;
+    }
+/* SECTION HERO */
+.hero_container {
+    padding: var(--PaddingHorizontalTablet);
+}
+    .logo {
+        height: 40rem;
+    }
+    #slideCounter {
+        font-size: 20rem;
+    }
+.hero_container-bottom {
+    padding-bottom: 48rem;
+}

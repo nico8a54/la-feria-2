@@ -1,0 +1,54 @@
+@import url(./index.css);
+@import url(./menu.css);
+
+
+h2 {
+    font-size: 48rem;
+}
+
+.hamburger_menu {
+    top: 80rem;
+    right: 125rem;
+}
+/* SECTION HERO */
+.hero_container {
+    padding: 96rem var(--PaddingHorizontalDesktop);
+    padding-bottom: 0;
+    gap: 120rem;
+}
+    .title {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 16rem;
+    }
+    .title > div {
+        padding-top: 9rem;
+    }
+.hero_container-bottom {
+    padding-bottom: 48rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: none;
+    padding: 64rem var(--PaddingHorizontalDesktop);
+    padding-bottom: 32rem;
+}
+.hero_container-bottom div {
+    gap: 8rem;
+    align-self: center;
+}
+.video_container {
+    max-height: none;
+    height: 100vh;
+    overflow:visible;
+}
+    .videos {
+        position: absolute;
+        height: auto;
+    }
+
+    #video1 {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+
