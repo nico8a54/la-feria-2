@@ -132,16 +132,21 @@ h2 {
         max-width: 100vw;
         max-height: 100vh;
         height: 100vh;
+        min-height: 100vh;
         top: 0;
         overflow: hidden;
     }
         .videos {
             position: absolute;
             height: 100vh;
+            min-height: 100vh;
+            object-fit: cover;
         }
-        #video1 {
-            height: 100%;
-        }
+        /* .videos.hidden {
+            display: none;
+        } */
+        
+       
 
 
    

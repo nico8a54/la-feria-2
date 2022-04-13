@@ -6,6 +6,7 @@ var title2 = document.getElementById('title2')
 var title3 = document.getElementById('title3')
 var slideCounter = document.getElementById("slideCounter")
 
+
 video1.play();
 
 video1.onended = function () {
