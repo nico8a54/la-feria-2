@@ -13,6 +13,8 @@
 }
 * {
     box-sizing: border-box;
+    margin: 0;
+
 }
 
 html {
@@ -36,6 +38,13 @@ h2 {
     color: white;
     text-shadow: 0px 0px 8px var(--AzulOscuro, 0.25);
 }
+h4 {
+    font-size: 24rem;
+    font-weight: 100;
+    color: white;
+    padding: 0;
+    line-height: 110%;
+}
 
 .dfc {
     display: flex;
@@ -51,12 +60,17 @@ h2 {
 
 /* SECTION HERO */
 .section_hero {
-    position: relative;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     max-height: 100vh;
     min-height: 100vh;
     background-color: var(--AzulOscuro);
     overflow: hidden;
+    z-index: -1;
+
 }
 
     .hero_container{
@@ -142,12 +156,32 @@ h2 {
             min-height: 100vh;
             object-fit: cover;
         }
-        /* .videos.hidden {
-            display: none;
-        } */
-        
-       
 
+/* SECTION QUIENES SOMOS */
+       
+.section_somos1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0, 0, 255, 0), #020222 40%);
+    z-index: 3;
+    min-height: 100vh;
+    padding: var(--PaddingHorizontalMobile);
+}
+.section_somos1 div {
+    display: flex;
+    flex-direction: column;
+    gap: 16rem;
+}
+
+.section_somos2 {
+    z-index: 3;
+    padding: var(--PaddingHorizontalMobile);
+    background-color: #020222;
+}
+.img_somos {
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0), #020222);
+    mask-image: linear-gradient(black, transparent);}
 
    
     
