@@ -19,7 +19,7 @@
     <my-menu class="hamburger_menu" onclick="slideMenu()"></my-menu>
     <my-drop-menu class="menu dfc" id="menu"> </my-drop-menu>
     
-    <section class="section_hero">        
+    <section class="section_hero" id="heroSection">        
         <div class="hero_container dfc">
             <img class="logo"src="./assets/Logo.svg" alt="">                
             <div class="heroTitles dfc">
@@ -71,28 +71,29 @@
         </video>
     </section>
 
-    <section class="section_somos1">
+    <section class="section_somos">
         <div>
-            <h2>Vidas, ciudades y negocios</h2>
-            <h4>son mejores cuando se diseñan</h4>
-        </div>
-    </section>
-
-    <section class="section_somos2">
-        <div>
-            <img class="img_somos" src="./assets/about2.png" alt="">
-            <div></div>
-            <h2>¿QUIÉNES SOMOS?</h2>
-            <p>
-                Somos una plataforma de exhibición y negocios del diseño en Colombia. Durante 3 días, empresas y profesionales en categorías como  Mobiliario, Interiorismo, Acabados, Diseño Industrial, Iluminación, Arquitectura, Domótica e Industrias Creativas, se reúnen para conectarse, generar negocios y actualizarse en tendencias. <br> <br> 
-                La Feria De Diseño es un ecosistema que conecta las diferentes oportunidades de la industria con las personas dentro de una plataforma comercial e inspiradora en donde #TODOSEDISEÑA, generando un diálogo y conocimiento entre emprendedores, productores, marcas y expertos. <a href="">(Ver más)</a>
-            </p>
-            <a href="">
-                <div>
-                    <span>Conoce más </span>
-                    <img src="./assets/arrowRight.svg" alt="">                
-                </div>    
-            </a>
+            <div class="section_somos-subtitle">
+                <h3>Vidas, ciudades y negocios</h3>
+                <h3>son mejores cuando se diseñan</h3>
+            </div>
+            <div class="section_somos-Container">
+                <img class="img_somos" src="./assets/about2Ipad.png" alt="">
+                <div class="section_somos-line"></div>
+                <div class="section_somos-textContainer">
+                    <h2>¿QUIÉNES SOMOS?</h2>
+                    <p>
+                        Somos una plataforma de exhibición y negocios del diseño en Colombia. Durante 3 días, empresas y profesionales en categorías como  Mobiliario, Interiorismo, Acabados, Diseño Industrial, Iluminación, Arquitectura, Domótica e Industrias Creativas, se reúnen para conectarse, generar negocios y actualizarse en tendencias. <br> <br> 
+                        La Feria De Diseño es un ecosistema que conecta las diferentes oportunidades de la industria con las personas dentro de una plataforma comercial e inspiradora en donde #TODOSEDISEÑA, generando un diálogo y conocimiento entre emprendedores, productores, marcas y expertos. <span>(Ver más)</span>
+                    </p>
+                    <a href="">
+                        <div class="link">
+                            <span>Conoce más </span>
+                            <img src="./assets/arrowRight.svg" alt="">                
+                        </div>    
+                    </a>
+                </div>
+            </div>
         </div>
 
     </section>
@@ -104,6 +105,7 @@
 
  
     <script src="./js/heroSlider.js"></script> 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="./js/index.js"></script> 
 </body>
 </html>

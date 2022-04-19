@@ -1,4 +1,23 @@
-function slideMenu() {
-    var element = document.getElementById("menu");
+
+const heroSection = document.getElementById("heroSection")
+function slideMenu() {   
+    var element = document.getElementById("menu"); 
     element.classList.toggle("active");
 }
+
+
+var controller = new ScrollMagic.Controller();
+
+var scene1 = new ScrollMagic.Scene({
+    triggerElement: '.section_somos',
+    duration: "100%",
+})
+
+.setClassToggle('.section_hero','active')
+.addTo (controller)
+
+// get the current scroll offset for the start and end of the scene.
+var start = scene1.scrollOffset(0);
+var end = scene1.scrollOffset(1) + scene1.duration();
+console.log("the scene starts at", start, "and ends at", end);
+

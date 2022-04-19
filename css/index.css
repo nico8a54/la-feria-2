@@ -6,7 +6,7 @@
     --FeriaPpal: #3A37E0;
     --PaddingVertical: 5.6rem;
     --PaddingHorizontalMobile: 24rem;
-    --PaddingHorizontalTablet: 88rem;
+    --PaddingHorizontalTablet: 88rem 56rem;
     --PaddingHorizontalDesktop: 140rem;
     --PaddingHorizontalWide: 140rem;
     --FontSizeRoot: 6.25%;
@@ -25,6 +25,7 @@ html {
 body {
     position: relative;
     margin: 0;
+    background: var(--AzulOscuro);
 }
 a {
     text-decoration: none;
@@ -34,7 +35,7 @@ p {
     font-size: 16rem;
     color: white;
     font-weight: 100;
-    line-height: 110%;
+    line-height: 120%;
     margin: 0;
 }
 h2 {
@@ -45,6 +46,13 @@ h2 {
     margin: 0;
     color: white;
     text-shadow: 0px 0px 8px var(--AzulOscuro, 0.25);
+}
+h3 {
+    font-size: 36rem;
+    font-weight: 100;
+    color: white;
+    padding: 0;
+    line-height: 110%;
 }
 h4 {
     font-size: 24rem;
@@ -65,7 +73,19 @@ h4 {
     top: 10rem;
     right: 10rem;
 }
-
+.link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16rem;
+    font-size: 14rem;
+    font-weight: 100;
+    color: white;
+}
+.link img {
+    width: 32rem;
+    padding-top: 4rem;
+}
 /* SECTION HERO */
 .section_hero {
     position: sticky;
@@ -78,7 +98,11 @@ h4 {
     background-color: var(--AzulOscuro);
     overflow: hidden;
     z-index: -1;
-
+    opacity: 1;
+    transition: all 0.75s ease-in;
+}
+.section_hero.active {
+    opacity: 0;
 }
 
     .hero_container{
@@ -165,35 +189,47 @@ h4 {
             object-fit: cover;
         }
 
-/* SECTION QUIENES SOMOS */
-       
-.section_somos1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: linear-gradient(180deg, rgba(0, 0, 255, 0), #020222 40%);
-    z-index: 3;
-    min-height: 100vh;
-    padding: var(--PaddingHorizontalMobile);
-}
-.section_somos1 div {
-    display: flex;
-    flex-direction: column;
-    gap: 16rem;
-    margin-top: 40vh;
-}
 
-/* SECTION QUIENES SOMOS 2 */
-.section_somos2 {
+/* SECTION QUIENES SOMOS */
+ 
+.section_somos {
     z-index: 3;
-    padding: var(--PaddingHorizontalMobile);
-    background-color: #020222;
+    padding: 64px var(--PaddingHorizontalMobile);
+    background: linear-gradient(180deg, rgba(0, 0, 255, 0),var(--AzulOscuro) 30%);}
+.section_somos>div {
+    display: flex;
+    flex-direction: column;
+    gap: 64rem;
+}
+.section_somos-subtitle {
+    padding: 200px 0;
+}
+.section_somos-Container {
+    display: flex;
+    flex-direction: column;
+    gap: 64rem;
+}
+.section_somos-line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--FeriaPpal);
+}
+.section_somos-textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24rem;
+}
+.section_somos-textContainer p span  {
+    color: var(--AzulClaro);
 }
 .img_somos {
     -webkit-mask-image: linear-gradient(to bottom, transparent 5%, rgb(255, 255, 255) 50%);
     mask-image: linear-gradient(to bottom, transparent 5%, rgb(255, 255, 255) 50%);
-    width: 100%;
+    height: 512rem;
+    object-fit: cover;
+    object-position: center;
 }
+
 
 
    

@@ -106,4 +106,7 @@ h2 {
         object-fit: cover;
     }
 
-/* SECTION QUIENES SOMOS */
+/* SECTION QUIENES SOMOS 1 & 2 */
+.section_somos1, .section_somos2 {
+    padding: var(--PaddingHorizontalTablet);
+}
