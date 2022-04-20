@@ -10,6 +10,7 @@
     --PaddingHorizontalDesktop: 140rem;
     --PaddingHorizontalWide: 140rem;
     --FontSizeRoot: 6.25%;
+    --Shadow: 0px 0px 16px #0a092632;
 }
 * {
     box-sizing: border-box;

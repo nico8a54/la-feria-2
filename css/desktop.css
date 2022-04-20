@@ -67,6 +67,16 @@ h2 {
         gap: 32rem;
         padding: 0;
     }
+        .section_somos-img {
+            width: auto;
+            height: auto;
+            background-image: url(../assets/Img_nosotros_tablet.jpg);
+            background-position-x: center;
+            background-position-y: bottom;
+            background-size: cover;
+            -webkit-mask-image: linear-gradient(to bottom, transparent 5%, rgb(255, 255, 255) 50%);
+            mask-image: linear-gradient(to bottom, transparent 5%, rgb(255, 255, 255) 50%);
+        }
         .section_somos-line {
             width: 2px;
             height: auto;
