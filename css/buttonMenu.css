@@ -86,9 +86,9 @@
             transition: all 0.25 ease;  
         }
             .buttonMenu-circle3.active {
-                width: 380rem;
-                height: 380rem;
-                transform: translateX(162rem) translateY(162rem);
+                width: 400rem;
+                height: 400rem;
+                transform: translateX(172rem) translateY(172rem);
                 z-index: 2;
                 opacity: .25;
             }
