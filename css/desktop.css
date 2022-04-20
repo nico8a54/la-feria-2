@@ -13,6 +13,17 @@ h2 {
     top: 80rem;
     right: 125rem;
 }
+
+/* BUTTON MENU */
+.section_buttonMenu-button {
+    bottom: 80px;
+    right: var(--PaddingHorizontalDesktop);
+}
+.section_buttonMenu-container-circle1, .section_buttonMenu-container-circle2, .section_buttonMenu-container-circle3 {
+    bottom: 80px;
+    right: var(--PaddingHorizontalDesktop);
+}
+
 /* SECTION HERO */
 .hero_container {
     padding: 96rem var(--PaddingHorizontalDesktop);

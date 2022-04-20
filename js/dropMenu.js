@@ -48,7 +48,7 @@ class MyDropMenu extends HTMLElement {
                 </div>
             </div>
 
-            <img class="menuImage"src="./assets/Feria+ Nav.svg" alt="">
+            <img class="menuImage"src="./assets/Feria+Nav.svg" alt="">
 
         `
     }
