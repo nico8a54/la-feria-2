@@ -14,7 +14,7 @@
     background-position: center;
     z-index: 2;
     box-shadow: var(--Shadow);
-    transition: all 0.5s ease-in;
+    transition: all 0.25s ease-in-out;
     cursor: pointer;
 }
 .section_buttonMenu-button.active {
@@ -30,7 +30,7 @@
     max-height: 100%;
     background-color: var(--AzulClaro);
     opacity: 0;
-    transition: all 1s ease-in;
+    transition: all 0.25s 0.35s  ease-in;
     overflow: hidden;
 }
 .section_buttonMenu-container.active {
@@ -38,7 +38,7 @@
     height: 100%;
     opacity: 0.95;
 }
-.section_buttonMenu-container-circle1 {
+.section_buttonMenu-container-circle1, .section_buttonMenu-container-circle2, .section_buttonMenu-container-circle3 {
     position: fixed;
     bottom: 80px;
     right: var(--PaddingHorizontalMobile);
@@ -47,10 +47,35 @@
     border-radius: 50%;
     z-index: 2;
     box-shadow: var(--Shadow);
-    transition: all 0.5s 0.5s ease-in;
+    background-color: var(--AzulClaro);
+    opacity: 1;
+    transition: all 0.25s ease-in;
 }
 .section_buttonMenu-container-circle1.active {
-    width: 112rem;
-    height: 112rem;
-    z-index: 2;
+    width: 160rem;
+    height: 160rem;
+    transform: translateX(52rem) translateY(52rem);
+    z-index: 4;
 }
+
+.section_buttonMenu-container-circle2{
+    transition: all 0.25s 0.15s ease-in;  
+}
+    .section_buttonMenu-container-circle2.active {
+        width: 260rem;
+        height: 260rem;
+        transform: translateX(102rem) translateY(102rem);
+        z-index: 3;
+        opacity: .5;
+    }
+.section_buttonMenu-container-circle2{
+    transition: all 0.25s 0.2s ease-in;  
+}
+    .section_buttonMenu-container-circle3.active {
+        width: 380rem;
+        height: 380rem;
+        transform: translateX(164rem) translateY(164rem);
+        z-index: 2;
+        opacity: .25;
+
+    }

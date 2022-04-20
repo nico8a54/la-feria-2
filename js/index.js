@@ -5,9 +5,13 @@ function slideMenu() {
 }
 function openButtonMenu() {   
     var element = document.getElementById("buttonMenu_container"); 
-    var circle = document.getElementById('circle1')
+    var circle1 = document.getElementById('circle1')
+    var circle2 = document.getElementById('circle2')
+    var circle3 = document.getElementById('circle3')
     element.classList.toggle("active");
-    circle.classList.toggle("active");
+    circle1.classList.toggle("active");
+    circle2.classList.toggle("active");
+    circle3.classList.toggle("active");
 }
 
 // Scroll Magic.
