@@ -1,7 +1,6 @@
-class buttonMenu extends HTMLElement {
+class bottomMenu extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <section class="section_buttonMenu">
         <div class="section_buttonMenu-button" onclick="this.classList.toggle('active')"></div>
         <div class="section_buttonMenu-container" id='buttonMenu_container'>
             <div class="buttonMenu-bckg" id='buttonMenu-bckg'></div>
@@ -17,4 +16,4 @@ class buttonMenu extends HTMLElement {
     }
 }
 
-customElements.define('my-button-menu', buttonMenu)
+customElements.define('my-bottom-menu', bottomMenu)

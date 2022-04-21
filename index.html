@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./css/buttonMenu.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://use.typekit.net/ojq4hve.css">
-    <script type="module" src="./js/menu.js"></script>
-    <script type="module" src="./js/buttonMenu.js"></script>
+    <script type="module" src="./js/hamburgerMenu.js"></script>
     <script type="module" src="./js/dropMenu.js"></script>
+    <script type="module" src="./js/bottomMenuIcon.js"></script>
 
     <link rel="stylesheet" media="(min-width:481px)" href="./css/tablet.css">
     <link rel="stylesheet" media="(min-width:769px)" href="./css/desktop.css">
@@ -107,12 +107,48 @@
     </section>
 
     <section class="section_participantes">
-        <div>
+        <div class="section_participantes-container">
             <div class="participantes_texto">
                 <h2>PARTICIPANTES</h2>
                 <p>En nuestra octava edición contamos con las categorías de Arquitectura, Mobiliario, Interiorismo, Iluminación, Acabados e instrias creativas. Estas son algunas de las marcas participantes que tuvimos en la muestra comercia de la octava edición:</p>
             </div>
-            <div>
+            <div class="participantes_scroll">
+                <div class="participantes_card">
+                    <img src="./assets/Imagen Mobiliario.jpg" alt="">
+                    <div class="participantes_card-container">
+                        <div class="card_container-title">
+                            <h4>MOBILIARIO</h4>
+                            <div class="card-line"></div>
+                        </div>
+                        <p>Residencial, institucional, exterior, urbano, cocinas, carpintería, arquitectónico.</p>
+                        <div class="link_container">
+                            <a href="">
+                                <div class="link">
+                                    <span>Ver más </span>
+                                    <img src="./assets/arrowRight.svg" alt="">                
+                                </div>    
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="participantes_card">
+                    <img src="./assets/Imagen Mobiliario.jpg" alt="">
+                    <div class="participantes_card-container">
+                        <div class="card_container-title">
+                            <h4>MOBILIARIO</h4>
+                            <div class="card-line"></div>
+                        </div>
+                        <p>Residencial, institucional, exterior, urbano, cocinas, carpintería, arquitectónico.</p>
+                        <div class="link_container">
+                            <a href="">
+                                <div class="link">
+                                    <span>Ver más </span>
+                                    <img src="./assets/arrowRight.svg" alt="">                
+                                </div>    
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="participantes_card">
                     <img src="./assets/Imagen Mobiliario.jpg" alt="">
                     <div class="participantes_card-container">
@@ -139,7 +175,7 @@
 
 
 
-    <my-button-menu onclick="openButtonMenu()" id='btnMenu'></my-button-menu>
+    <my-bottom-menu onclick="openButtonMenu()" id='btnMenu'></my-bottom-menu>
 
 
 

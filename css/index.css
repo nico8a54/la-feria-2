@@ -241,12 +241,14 @@ h4 {
 .section_participantes {
     background-color: white;
     padding: var(--PaddingHorizontalMobile);
+    padding-right: 0;
     min-height: 100vh;
 }
-.section_participantes > div {
+.section_participantes-container {
     display: flex;
     flex-direction: column;
     gap: 64rem;
+    overflow-x: scroll ;
 }
 .participantes_texto h2 {
     color: var(--FeriaPpal);
@@ -257,14 +259,20 @@ h4 {
 .participantes_texto p {
     color: var(--AzulOscuro);
 }
+
+.participantes_scroll{
+    width: auto;
+    height: auto;
+    display: flex;
+}
 .participantes_card {
     display: flex;
-    width: 278rem;
+    min-width: 278rem;
     height: 469rem;
     flex-direction: column;  
     overflow: hidden;  
 }
-.participantes_card img {
+.participantes_card + img {
     height: 284rem;    
 }
 .participantes_card-container {

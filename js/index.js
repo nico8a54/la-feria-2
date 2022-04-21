@@ -8,6 +8,7 @@ function slideMenu() {
 // Open magic button at the botom of the screen.
 function openButtonMenu() {   
     var btnMenuContainer = document.getElementById("buttonMenu_container"); 
+    var bck = document.getElementById('buttonMenu-bckg')
     var circle1 = document.getElementById('circle1')
     var circle2 = document.getElementById('circle2')
     var circle3 = document.getElementById('circle3')
@@ -15,6 +16,7 @@ function openButtonMenu() {
     var button2 = document.getElementById('button2')
     var button3 = document.getElementById('button3')
     btnMenuContainer.classList.toggle("active");
+    bck.classList.toggle("active");
     circle1.classList.toggle("active");
     circle2.classList.toggle("active");
     circle3.classList.toggle("active");
