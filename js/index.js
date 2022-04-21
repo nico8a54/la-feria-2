@@ -1,4 +1,5 @@
 
+// Open menu from the hamburger menu button.
 function slideMenu() {   
     var element = document.getElementById("menu"); 
     element.classList.toggle("active");
@@ -22,25 +23,10 @@ function openButtonMenu() {
     button3.classList.toggle("active");
 }
 
-// Scroll Magic.
-    var controller = new ScrollMagic.Controller();
-
-    var scene1 = new ScrollMagic.Scene({
-        triggerElement: '.section_somos',
-        duration: "100%",
-    })
-
-    .setClassToggle('.section_hero','active')
-    .addTo (controller)
-
-    // get the current scroll offset for the start and end of the scene.
-    var start = scene1.scrollOffset(0);
-    var end = scene1.scrollOffset(1) + scene1.duration();
-    console.log("the scene starts at", start, "and ends at", end);
-
+// Hides hero section and change color when section somos shows at the screen.
+const section_somos = document.getElementById('somos');
    
-function reveal() {
-    var section_somos = document.getElementById('somos');
+function reveal1() {
     var buttonMenu = document.getElementById('btnMenu');
     var windowHeight = window.innerHeight;
     var elementTop = section_somos.getBoundingClientRect().top;
@@ -52,4 +38,19 @@ function reveal() {
     }
 }
     
-window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", reveal1);
+
+// Reveals Magic button when section somos shows at the screen..
+function reveal2() {
+    var section_hero = document.getElementById('heroSection');
+    var windowHeight = window.innerHeight;
+    var elementTop = section_somos.getBoundingClientRect().top;
+    var elementVisible = 550;
+    if (elementTop < windowHeight - elementVisible) {
+        section_hero.classList.add("active");
+    } else {
+        section_hero.classList.remove("active");
+    }
+}
+    
+window.addEventListener("scroll", reveal2);

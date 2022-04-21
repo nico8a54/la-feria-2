@@ -35,7 +35,7 @@ a {
 p {
     font-size: 16rem;
     color: white;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 120%;
     margin: 0;
 }
@@ -56,8 +56,8 @@ h3 {
     line-height: 110%;
 }
 h4 {
-    font-size: 24rem;
-    font-weight: 100;
+    font-size: 16rem;
+    font-weight: 300;
     color: white;
     padding: 0;
     line-height: 110%;
@@ -238,7 +238,60 @@ h4 {
             }
 
 /* SECTION PARTICIPANTES */
-
-
+.section_participantes {
+    background-color: white;
+    padding: var(--PaddingHorizontalMobile);
+    min-height: 100vh;
+}
+.section_participantes > div {
+    display: flex;
+    flex-direction: column;
+    gap: 64rem;
+}
+.participantes_texto h2 {
+    color: var(--FeriaPpal);
+    font-weight: 300;
+    margin-bottom: 24rem;
+    text-shadow: none;
+}
+.participantes_texto p {
+    color: var(--AzulOscuro);
+}
+.participantes_card {
+    display: flex;
+    width: 278rem;
+    height: 469rem;
+    flex-direction: column;  
+    overflow: hidden;  
+}
+.participantes_card img {
+    height: 284rem;    
+}
+.participantes_card-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24rem;
+    padding: 24rem 16rem;
+    background-color: var(--AzulOscuro);
+}
+.card_container-title {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+.participantes_card-container div:nth-child(2) {
+    background-color: white;
+    height: 2px;
+    width: 50rem;
+}
+.participantes_card-container p {
+    font-size: 14rem;
+    font-weight: 100;
+    line-height: 120%;
+}
+.card_container-title {
+    height: 100%;
+}
    
     

@@ -22,7 +22,7 @@
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 2;
+    z-index: 10;
     box-shadow: var(--Shadow);
     transition: all 0.25s ease-in-out;
     cursor: pointer;
@@ -51,6 +51,7 @@
             height: 100%;
             background-color: var(--AzulOscuro);
             opacity: 0.9;
+            z-index: 7;
         }
         .buttonMenu-circle1, .buttonMenu-circle2, .buttonMenu-circle3 {
             position: fixed;
@@ -59,7 +60,7 @@
             width: 56rem;
             height: 56rem;
             border-radius: 50%;
-            z-index: 2;
+            z-index: 10;
             box-shadow: var(--Shadow);
             background-color: var(--AzulClaro);
             opacity: 1;
@@ -69,7 +70,6 @@
             width: 200rem;
             height: 200rem; 
             transform: translateX(72rem) translateY(72rem);
-            z-index: 4;
         }
 
         .buttonMenu-circle2{
@@ -79,7 +79,7 @@
                 width: 300rem;
                 height: 300rem;
                 transform: translateX(122rem) translateY(122rem);
-                z-index: 3;
+                z-index: 9;
                 opacity: .5;
             }
         .buttonMenu-circle3{
@@ -89,7 +89,7 @@
                 width: 400rem;
                 height: 400rem;
                 transform: translateX(172rem) translateY(172rem);
-                z-index: 2;
+                z-index: 8;
                 opacity: .25;
             }
 
@@ -100,7 +100,7 @@
             width: 0rem;
             height: 0rem;
             border-radius: 50%;
-            z-index: 3;
+            z-index: 11;
             box-shadow: var(--Shadow);
             background-color: white;
             opacity: 0;
